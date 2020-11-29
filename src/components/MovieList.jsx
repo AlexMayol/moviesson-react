@@ -38,8 +38,8 @@ const MovieList = () => {
     // }
 
 
-    const [genreValue, setgenreValue] = useState('');
-    const [searchValue, setSearchValue] = useState('');
+    // const [genreValue, setgenreValue] = useState('');
+    // const [searchValue, setSearchValue] = useState('');
     // const handleSearch = (e) => {
     //     setSearchValue(e.target.value)
     //     console.log(searchValue)
