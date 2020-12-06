@@ -1,19 +1,23 @@
-export const getGenres = () => {
-    return {
-        type: 'GET_GENRES'
-    }
-};
-export const setGenres = () => {
-    return {
-        type: 'SET_GENRES'
-    }
-};
+// export const getGenres = () => {
+//     return {
+//         type: 'GET_GENRES'
+//     }
+// };
+// export const setFilters = ({ name, genre }) => {
+//     return {
+//         type: 'SET_FILTERS',
+//         name,
+//         genre
+//     }
+// };
 
-export const filterMovies = () => {
-    return {
-        type: 'FILTER'
-    };
-};
+// export const filterMovies = ({ name = '', genre = null }) => {
+//     return {
+//         type: 'FILTER',
+//         name,
+//         genre
+//     };
+// };
 
 export const getMovie = (title) => {
     return {

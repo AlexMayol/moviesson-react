@@ -11,20 +11,20 @@ const MovieDetails = ({ match }) => {
   const movie = useSelector((state) => state.current_movie);
 
   return (
-    <section>
-        <h1>{movie.name}</h1>
-      <img src={`/assets/images/movie-covers/${movie.img}`} alt={movie.name} />
-      <div>
+    <section className="MovieDetails">
+        <h1 className="MovieDetails-Title">{movie.name}</h1>
+      <img className="MovieDetails-Image" src={`/assets/images/movie-covers/${movie.img}`} alt={movie.name} />
+      <div className="MovieDetails-Genres">
           {movie.genres.map( (gen)=>(
-              <span>{capitalize(gen)}</span>
+              <span  key={gen}>{capitalize(gen)}</span>
 
           ))}
       </div>
-      <p>{movie.description}</p>
-      <p>{movie.rate}</p>
-      <p>{movie.length}</p>
+      <p className="MovieDetails-Description">{movie.description}</p>
+      <p className="MovieDetails-rate">{movie.rate}</p>
+      <p className="MovieDetails-Length">{movie.length}</p>
 
-      <button>Play</button>
+      <button className="MovieDetails-PlayBtn">Play</button>
     </section>
   );
 };
