@@ -9,7 +9,21 @@ header{
     }
 }
 body{
+    margin: 0;
+    padding:0;
     background-color:#1A1D29;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+    & .LogoSvg{
+        width:1.5rem;
+        height: 1.5rem;
+        margin-right: .25rem;
+        color: white;
+        fill: currentColor;
+    }
 }
 .MoviesListContainer{
     max-width: 1280px;
