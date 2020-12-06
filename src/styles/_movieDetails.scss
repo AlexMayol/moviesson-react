@@ -1,0 +1,77 @@
+
+.MovieDetails{
+    padding:1rem;
+    color: white;
+    & .MovieDetails-Wrapper{
+        padding:0 1rem;
+        
+    }
+    & .MovieDetails__Description{
+        margin-bottom: 1rem;
+    }
+    & .MovieDetails__Image{
+        border-radius: .5rem;
+        width: 100%;
+        max-height: 60vh;
+        object-fit: cover;
+        object-position: top;
+    }
+    & .MovieDetails__Title{
+            font-size: 3rem;
+            line-height:1;
+            margin-bottom:1rem;
+    }
+    & .MovieDetails__Genres{
+        display: flex;
+        flex-wrap: wrap;
+      
+        & .MovieDetails__Genres__name{
+            border-radius:.25rem .75rem;
+            margin: .25rem .5rem;
+            color: white;
+            padding:.25rem;
+            background-color:#9d174d;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+
+    & .MovieDetails__PlayBtn{
+        padding: .5rem 1.5rem;
+        font-size: 2rem;
+        border: 2px solid white;
+        border-radius: 1rem;
+        transition: all .25s ease;
+        display: flex;
+        align-items: center;
+        &:hover{
+            background-color: white;
+            color: #1A1D29;
+        }
+        & .MovieDetails__PlayBtn__Icon{
+            width: 2rem;
+            
+            fill:currentColor;
+            height:  2rem;
+            margin-left: .5rem;
+        }
+    }
+
+    & .MovieDetails__Rate{
+        background-color: #46d369;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 .25rem;
+        border-radius: .5rem;
+        & .MovieDetails__Rate__Icon{
+            width:1rem;
+            height: 1rem;
+            color: white;
+            fill: currentColor;
+            margin-right:.25rem;
+        }
+
+    }
+}

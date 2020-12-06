@@ -15,9 +15,6 @@ store.dispatch(initializeData());
 const App = () => {
   return (
     <section>
-      <header>
-        <h1>Moviesson</h1>
-      </header>
       <Provider store={store}>
         <Routes />
       </Provider>
